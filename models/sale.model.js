@@ -2,19 +2,25 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const saleSchema = Schema({
-    products: {
-        type: [
-            {
-                name: String,
-                category: String,
-                price: String,
-                img: String
+    items: {
+        type: {
+            id: {
+                cantidad: {
+                    type: Number
+                },
+                precio: {
+                    type: Number
+                }
             }
-        ]
+        }
     },
 
     subtotal: {
-        type: String
+        type: Number
+    },
+
+    iva: {
+        type: Number
     },
 
     total: {
