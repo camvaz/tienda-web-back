@@ -21,6 +21,6 @@ const saleSchema = Schema({
     }
 });
 
-const product = mongoose.model("product", productSchema, "Product");
+const sale = mongoose.model("sale", saleSchema, "Sale");
 
-module.exports = product;
+module.exports = sale;
