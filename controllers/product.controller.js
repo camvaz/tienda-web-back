@@ -2,6 +2,7 @@ const product = require("../models/product.model");
 const vm = require("v-response");
 
 create_product = (req, res, next) => {
+    console.log(req.body);
     const product_body = req.body;
     const new_product = new product(product_body);
 
