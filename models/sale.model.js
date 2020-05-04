@@ -25,6 +25,9 @@ const saleSchema = Schema({
 
     total: {
         type: String
+    },
+    date: {
+        type: String
     }
 });
 
