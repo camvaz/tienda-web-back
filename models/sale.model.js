@@ -7,7 +7,8 @@ const saleSchema = Schema({
             {
                 name: String,
                 category: String,
-                price: String
+                price: String,
+                img: String
             }
         ]
     },

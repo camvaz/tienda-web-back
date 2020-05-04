@@ -10,7 +10,7 @@ const productSchema = Schema({
         type: String
     },
 
-    description: {
+    img: {
         type: String
     },
 
